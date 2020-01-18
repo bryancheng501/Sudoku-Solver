@@ -14,7 +14,7 @@ bool checkRow(int board[9][9], int row, int num);
 bool checkCol(int board[9][9], int col, int num);
 bool checkGrid(int board[9][9], int row, int col, int num);
 
-/*
+
 int main(){
     // 9x9 grid representing sudoku board
     //  0 represents an empty value
@@ -37,7 +37,7 @@ int main(){
     return(0);
     
 }
-*/
+
 
 //print out the sudoku board
 void printBoard(int board[9][9]){
