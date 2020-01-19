@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+
+
 void printBoard(int board[9][9]);
 bool solveBoard(int board[9][9]);
 bool findEmptyPosition(int board[9][9], int *row, int *col);
@@ -14,19 +16,11 @@ bool checkRow(int board[9][9], int row, int num);
 bool checkCol(int board[9][9], int col, int num);
 bool checkGrid(int board[9][9], int row, int col, int num);
 
-
+/*
 int main(){
     // 9x9 grid representing sudoku board
     //  0 represents an empty value
-    int board[9][9] =  {{1, 0, 0, 4, 0, 2, 8, 0, 0},
-                        {8, 2, 0, 6, 0, 0, 0, 0, 4},
-                        {7, 3, 4, 0, 5, 0, 0, 0, 0},
-                        {2, 4, 0, 5, 0, 0, 3, 0, 0},
-                        {0, 0, 3, 0, 0, 0, 2, 0, 0},
-                        {0, 0, 1, 0, 0, 3, 0, 8, 5},
-                        {0, 0, 0, 0, 9, 0, 1, 4, 8},
-                        {9, 0, 0, 0, 0, 8, 0, 5, 6},
-                        {0, 0, 8, 1, 0, 7, 0, 0, 2}};
+   
 
     printf("Starting board:\n");
     printBoard(board);
@@ -37,7 +31,7 @@ int main(){
     return(0);
     
 }
-
+*/
 
 //print out the sudoku board
 void printBoard(int board[9][9]){
@@ -55,6 +49,8 @@ void printBoard(int board[9][9]){
 //  returns true with solved board if solvable
 //  returns false if board is unsolvable
 bool solveBoard(int board[9][9]){
+
+    printBoard(board);
 
     int row, col;
     //find next empty position
